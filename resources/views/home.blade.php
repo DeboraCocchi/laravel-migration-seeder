@@ -3,10 +3,10 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>Home Page</h1>
+
 
 <div class="dc-container">
-    <table class="table">
+    <table class="table striped">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -24,10 +24,17 @@
         <tbody>
             @foreach ($trains as $train)
             <tr>
-                <td>{{$train->}}</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>{{$train->id}}</td>
+                <td>{{$train->azienda}}</td>
+                <td>{{$train->num_treno}}</td>
+                <td>{{$train->tipo_treno}}</td>
+                <td>{{$train->staz_part}}</td>
+
+                <td>{{$train->staz_arr}}</td>
+                <td>{{$train->num_cambi}}</td>
+                <td>{{$train->num_carrozze}}</td>
+                <td>{{$train->in_orario ==0 ? 'No' : 'Sì'}}</td>
+                <td>{{$train->cancellato ==0 ? 'No' : 'Sì'}}</td>
               </tr>
             @endforeach
 
