@@ -24,7 +24,7 @@ return new class extends Migration
             // Numero Carrozze
             // In orario
             // Cancellato
-            $table->string('azienda', 20);
+            $table->enum('azienda', ['TrenItalia', 'Italo']);
             $table->string('tipo_treno', 20);
             $table->string('num_treno', 10);
             $table->string('staz_part', 50);

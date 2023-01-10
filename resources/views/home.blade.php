@@ -31,7 +31,7 @@
                 <td>{{$train->staz_part}}</td>
 
                 <td>{{$train->staz_arr}}</td>
-                <td>{{$train->num_cambi}}</td>
+                <td>{{$train->num_cambi ==0 ? 'No' : $train->num_cambi}}</td>
                 <td>{{$train->num_carrozze}}</td>
                 <td>{{$train->in_orario ==0 ? 'No' : 'Sì'}}</td>
                 <td>{{$train->cancellato ==0 ? 'No' : 'Sì'}}</td>
