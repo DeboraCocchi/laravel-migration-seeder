@@ -6,7 +6,7 @@
 
 
 <div class="dc-container">
-    <table class="table striped">
+    <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -41,7 +41,7 @@
 
         </tbody>
       </table>
-
+      {{$trains->links()}}
 </div>
 
 @endsection

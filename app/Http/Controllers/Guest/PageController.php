@@ -9,7 +9,7 @@ use App\Models\Train;
 class PageController extends Controller
 {
     public function index(){
-        $trains=Train::all();
+        $trains=Train::paginate(15);
         // dd($trains);
         return view('home', compact('trains'));
     }
